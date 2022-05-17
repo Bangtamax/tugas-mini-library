@@ -20,12 +20,15 @@ class Table {
     data.forEach((d) => {
       open += `
           <tr>
-            <td>${d[0]}</td>
-            <td>${d[1]}</td>
+            <td>${d.id}</td>
+            <td>${d.name}</td>
+            <td>${d.username}</td>
+            <td>${d.email}</td>
+            <td>${d.address.street + ", " + d.address.suite + ", " + d.address.city + ", " + d.address.zipcode}</td>
+            <td>${d.company.name}</td>
           </tr>
         `;
     });
-
     return open + close;
   }
 
@@ -34,5 +37,4 @@ class Table {
     element.innerHTML = table;
   }
 }
-
 export default Table;

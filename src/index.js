@@ -1,2 +1,2 @@
 import Table from "./moduleClassTable";
-import table from "./moduleCreateTable ";
+import table from "./moduleCreateTable";
